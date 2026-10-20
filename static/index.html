@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>kepçe | Instagram videolarını toplu indir</title>
+  <meta name="description" content="Instagram Reels ve gönderi videolarını tek seferde 20 taneye kadar MP4 olarak indir.">
+  <meta name="theme-color" content="#F2F4F8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F1220" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='9' width='4' height='14' rx='1.5' fill='%233046F5'/%3E%3Crect x='10' y='9' width='4' height='14' rx='1.5' fill='%233046F5'/%3E%3Crect x='17' y='9' width='4' height='14' rx='1.5' fill='%230B8F63'/%3E%3Crect x='24' y='9' width='4' height='14' rx='1.5' fill='%23151A2D'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700;800&display=swap">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="mark" href="/" aria-label="kepçe ana sayfa">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="9" width="4" height="14" rx="1.5"/><rect x="10" y="9" width="4" height="14" rx="1.5"/><rect x="17" y="9" width="4" height="14" rx="1.5" class="lit"/><rect x="24" y="9" width="4" height="14" rx="1.5" class="ink"/></svg>
+        kepçe
+      </a>
+    </header>
+
+    <main>
+      <section id="intro">
+        <h1>Instagram videolarını 20'şer 20'şer indir.</h1>
+        <p class="lede">Reels ve gönderi linklerini aşağıya yapıştır. Arada başka yazılar olsa da sorun değil, linkleri kendimiz ayıklarız.</p>
+      </section>
+
+      <section id="input-panel" class="panel">
+        <label for="links" class="sr-only">Instagram linkleri</label>
+        <textarea id="links" rows="7" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off"
+          placeholder="https://www.instagram.com/reel/...&#10;https://www.instagram.com/p/..."></textarea>
+        <div class="tools">
+          <button type="button" id="paste" class="ghost">Panodan yapıştır</button>
+          <button type="button" id="clear" class="ghost" hidden>Temizle</button>
+        </div>
+      </section>
+
+      <div class="meter" aria-hidden="true"><div class="slots" id="slots"></div></div>
+      <p class="count" id="count"><b>0</b> / 20 link</p>
+      <p class="notice" id="notice" role="status" hidden></p>
+
+      <button type="button" id="go" class="primary" disabled>Videoları indir</button>
+
+      <section id="results" hidden>
+        <p class="summary" id="summary" aria-live="polite"></p>
+        <button type="button" id="all" class="primary" disabled>Videoları indir</button>
+        <p class="fine" id="all-hint" hidden>Tarayıcın birden fazla dosya için izin sorarsa İzin ver'e dokun.</p>
+        <div class="results-tools">
+          <button type="button" id="leftover" class="ghost" hidden></button>
+          <button type="button" id="again" class="ghost">Yeni liste</button>
+        </div>
+        <ol id="list" class="list"></ol>
+        <p class="fine" id="expires"></p>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <p>Yalnızca kendi videolarını ya da sahibinden izin aldığın videoları indir. Gizli hesaplar ve hikâyeler desteklenmiyor.</p>
+      <p>kepçe, Instagram ya da Meta ile bağlantılı değildir.</p>
+    </footer>
+  </div>
+  <script src="/app.js" defer></script>
+</body>
+</html>

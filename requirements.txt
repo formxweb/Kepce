@@ -1,0 +1,4 @@
+starlette>=0.40,<2
+uvicorn[standard]>=0.29
+# Instagram sık değişiyor; her yayında en güncel yt-dlp kurulsun diye sürüm sabitlenmedi.
+yt-dlp[default]
