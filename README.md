@@ -1,6 +1,6 @@
 # kepçe: Instagram videolarını toplu indirme sitesi
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/formxweb/kepce)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/formxweb/Kepce)
 
 Kullanıcı en fazla 20 Instagram linkini (Reels, gönderi, IGTV) tek seferde yapıştırır, site hepsini aynı anda hazırlar. "Hepsini indir" düğmesi her videoyu ayrı bir MP4 dosyası olarak cihaza indirir; her satırda tek tek indirme düğmesi de var. Arayüz Türkçe ve telefona göre tasarlandı.
 
